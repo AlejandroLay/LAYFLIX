@@ -34,7 +34,6 @@ h3.SaltoDePagina {
     top: 0;
     padding: 0 1%;
     height: 100px;
-    backdrop-filter: blur(0px);
 }
 
 .navMenu_navbar .navMenu_logo {
@@ -51,7 +50,6 @@ h3.SaltoDePagina {
     position: relative;
     padding: 0;
     margin: 0;
-    width: 20%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -93,7 +91,8 @@ h3.SaltoDePagina {
     transition: all .3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+
+/* @media screen and (max-width: 768px) {
     .navMenu_navbar .navMenu_logo {
         float: none;
         width: auto;
@@ -134,4 +133,4 @@ h3.SaltoDePagina {
     .navMenu_navbar :checked~.navMenu_icon-burger .navMenu_line:nth-child(2) {
         opacity: 0;
     }
-}
+} */
