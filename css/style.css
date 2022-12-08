@@ -4,26 +4,46 @@ body {
     Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+
+#show_bg_2 .slogan-navbar {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0%;
+    text-align: center;
+}
+
+.slogan-navbar h4 {
+    font-size: 50px;
+}
+
+.slogan-navbar p {
+    font-size: 22.5px;
+}
+
 #show_bg_2 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.74)), url('../img/imagen_inicio.jpg');
     width: 100%;
-    height: 880px;
+    height: 650px;
     background-size: cover;
     color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 50px;
 }
 
-h3.SaltoDePagina {
-    PAGE-BREAK-AFTER: always
-}
-
-.navMenu_container {
-    position: relative;
-    margin-top: 100px;
-    width: 100%;
+.btn-login {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: 7px solid red;
+    border-radius: 7px;
 }
 
 .navMenu_navbar {
@@ -56,81 +76,61 @@ h3.SaltoDePagina {
     align-items: center;
 }
 
-.navMenu_navbar .navMenu_links li {
-    list-style: none;
+
+/* ---------------------------------------- TOP LIST ---------------------------------------- */
+
+.top-list {
+    padding: 2.5%;
 }
 
-.navMenu_navbar .navMenu_links a {
-    display: block;
-    padding: 1em;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+.netflix-row {
+    overflow: scroll;
+    width: 100%;
 }
 
-#navMenu_nav-toggle {
-    position: absolute;
-    top: -100px;
+.netflix-row--inner {
+    transition: 450ms transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 70.3125px 0;
+    padding-bottom: 10px;
 }
 
-.navMenu_navbar .navMenu_icon-burger {
-    display: none;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
+.netflix-row--item {
+    display: inline-block;
+    background: #808080;
+    width: 250px;
+    height: 140.625px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
 }
 
-.navMenu_navbar .navMenu_icon-burger .navMenu_line {
-    width: 30px;
-    height: 5px;
-    background-color: #ffffff;
-    margin: 5px;
-    border-radius: 3px;
-    transition: all .3s ease-in-out;
+.netflix-row--item:last-child {
+    transform-origin: center right;
 }
 
 
-/* @media screen and (max-width: 768px) {
-    .navMenu_navbar .navMenu_logo {
-        float: none;
-        width: auto;
-        justify-content: center;
-    }
-    .navMenu_navbar .navMenu_links {
-        float: none;
-        position: fixed;
-        z-index: 9;
-        left: 0;
-        right: 0;
-        top: 100px;
-        bottom: 100%;
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        background-color: rgba(0, 0, 0, .8);
-        overflow: hidden;
-        box-sizing: border-box;
-        transition: all .5s ease-in-out;
-    }
-    .navMenu_navbar .navMenu_links a {
-        font-size: 20px;
-    }
-    .navMenu_navbar :checked~.navMenu_links {
-        bottom: 0;
-    }
-    .navMenu_navbar .navMenu_icon-burger {
-        display: block;
-    }
-    .navMenu_navbar :checked~.navMenu_icon-burger .navMenu_line:nth-child(1) {
-        transform: translateY(10px) rotate(225deg);
-    }
-    .navMenu_navbar :checked~.navMenu_icon-burger .navMenu_line:nth-child(3) {
-        transform: translateY(-10px) rotate(-225deg);
-    }
-    .navMenu_navbar :checked~.navMenu_icon-burger .navMenu_line:nth-child(2) {
-        opacity: 0;
-    }
-} */
+/* HOVER EFFECT */
+
+.netflix-row {
+    opacity: 1;
+}
+
+.netflix-row--inner:hover {
+    transform: translate3d(-62.5px, 0, 0);
+}
+
+.netflix-row--inner:hover .netflix-row--item {
+    opacity: 0.3;
+}
+
+.netflix-row--inner:hover .netflix-row--item:hover {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.netflix-row--item:hover~.netflix-row--item {
+    transform: translate3d(125px, 0, 0);
+}
