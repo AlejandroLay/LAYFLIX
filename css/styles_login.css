@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
     margin: 0;
+    width: 100%;
     Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -64,12 +65,11 @@ body {
 
 /* /* ---------------------------------------- LOGIN ---------------------------------------- */
 
-
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .login-box {
-        background: #ff0000;
+        background-color: #ff0000;
     }
-} */
+}
 
 .registrarse p {
     padding: 0% 2% 0% 0%;
@@ -93,7 +93,6 @@ body {
 .login-box {
     width: 430px;
     height: 490px;
-    background: #000000;
     color: #ffffff;
     top: 55%;
     left: 50%;
@@ -101,6 +100,7 @@ body {
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 100px 60px;
+    background-color: rgba(0, 0, 0, 0.51)
 }
 
 .login-box .avatar {
