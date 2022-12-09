@@ -9,11 +9,6 @@ body {
     display: none;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
 
@@ -69,17 +64,35 @@ a {
 
 /* /* ---------------------------------------- LOGIN ---------------------------------------- */
 
+
+/* @media only screen and (max-width: 600px) {
+    .login-box {
+        background: #ff0000;
+    }
+} */
+
+.registrarse p {
+    padding: 0% 2% 0% 0%;
+}
+
+.registrarse a {
+    color: white;
+}
+
+.registrarse {
+    padding: 2% 0% 0% 0%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
 .form {
     text-align: left;
 }
 
-.login-box::before {
-    filter: blur(2px);
-}
-
 .login-box {
     width: 430px;
-    height: 525px;
+    height: 490px;
     background: #000000;
     color: #ffffff;
     top: 55%;
@@ -114,17 +127,15 @@ a {
 
 .login-box input {
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .login-box input[type="text"],
 .login-box input[type="password"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
     outline: none;
+    padding: 0% 5%;
+    width: 90%;
+    color: #000000;
     height: 40px;
-    color: #fff;
     font-size: 16px;
 }
 
@@ -142,15 +153,4 @@ a {
     cursor: pointer;
     background: #ff0000;
     color: #ffffff;
-}
-
-.login-box a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
-}
-
-.login-box a:hover {
-    color: #fff;
 }
