@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    margin: 0;
     Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -46,7 +47,7 @@ a {
 .btn-login {
     background-color: red;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border: 7px solid red;
     border-radius: 7px;
 }

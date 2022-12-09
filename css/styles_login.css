@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    margin: 0;
     Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
 
@@ -30,7 +31,7 @@ a {
 .btn-login {
     background-color: red;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border: 7px solid red;
     border-radius: 7px;
 }
@@ -68,10 +69,6 @@ a {
 
 /* /* ---------------------------------------- LOGIN ---------------------------------------- */
 
-label {
-    font-size: 20px;
-}
-
 .form {
     text-align: left;
 }
@@ -105,8 +102,7 @@ label {
 .login-box h1 {
     margin: 0;
     padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .login-box label {
@@ -138,7 +134,7 @@ label {
     height: 40px;
     background: #ff0000;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 20px;
 }
 
