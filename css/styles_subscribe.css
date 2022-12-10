@@ -32,7 +32,9 @@ a {
 }
 
 .desc-film {
-    padding: 14% 44% 0% 1%;
+    margin-top: 14%;
+    margin-left: 1%;
+    margin-right: 44%;
 }
 
 .desc-film h3 {
