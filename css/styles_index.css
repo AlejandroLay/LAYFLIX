@@ -2,12 +2,26 @@ body {
     background-color: black;
     color: white;
     margin: 0;
-    Font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    font-family: Century Gothic;
 }
+
+
+/* body::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+} */
 
 ::-webkit-scrollbar {
     display: none;
 }
+
+
+/* ---------------------------------------- EFECTO HOVER PARA IMAGENES ---------------------------------------- */
 
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
@@ -86,7 +100,7 @@ a {
 /* ---------------------------------------- TOP LIST ---------------------------------------- */
 
 .top-list {
-    padding: 2.5%;
+    padding: 2.5% 2.5% 0% 2.5%;
 }
 
 .netflix-row {
@@ -105,7 +119,7 @@ a {
 .netflix-row--item {
     display: inline-block;
     background: #808080;
-    width: 250px;
+    width: 350px;
     height: 140.625px;
     margin-right: 10px;
     cursor: pointer;
@@ -120,14 +134,6 @@ a {
 
 /* HOVER EFFECT */
 
-.netflix-row {
-    opacity: 1;
-}
-
-.netflix-row--inner:hover {
-    transform: translate3d(-62.5px, 0, 0);
-}
-
 .netflix-row--inner:hover .netflix-row--item {
     opacity: 0.3;
 }
@@ -139,4 +145,11 @@ a {
 
 .netflix-row--item:hover~.netflix-row--item {
     transform: translate3d(125px, 0, 0);
+}
+
+
+/* ---------------------------------------- CATALOGO ---------------------------------------- */
+
+.catalogo {
+    padding: 0% 2.5% 0% 2.5%;
 }
