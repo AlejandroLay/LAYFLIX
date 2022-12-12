@@ -2,7 +2,7 @@ body {
     background-color: black;
     color: white;
     margin: 0;
-    font-family: Century Gothic;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
 
@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
 } */
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     display: none;
 }
 
@@ -99,7 +99,7 @@ a {
 
 /* ---------------------------------------- TOP LIST ---------------------------------------- */
 
-.top-list {
+.contenido {
     padding: 2.5% 2.5% 0% 2.5%;
 }
 
@@ -119,7 +119,7 @@ a {
 .netflix-row--item {
     display: inline-block;
     background: #808080;
-    width: 350px;
+    width: 300px;
     height: 140.625px;
     margin-right: 10px;
     cursor: pointer;
@@ -133,6 +133,14 @@ a {
 
 
 /* HOVER EFFECT */
+
+.netflix-row {
+    opacity: 1;
+}
+
+.netflix-row--inner:hover {
+    transform: translate3d(-62.5px, 0, 0);
+}
 
 .netflix-row--inner:hover .netflix-row--item {
     opacity: 0.3;
@@ -150,6 +158,33 @@ a {
 
 /* ---------------------------------------- CATALOGO ---------------------------------------- */
 
-.catalogo {
-    padding: 0% 2.5% 0% 2.5%;
+.four-column {
+    float: left;
+    width: 23%;
+    padding: 2.5% 0% 1% 2%;
 }
+
+.four-column img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .four-column {
+        width: 31%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .four-column {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .four-column {
+        width: 100%;
+    }
+}
+
+
+/* FOOTER */

@@ -3,7 +3,7 @@ body {
     color: white;
     margin: 0;
     overflow-y: hidden;
-    font-family: Century Gothic;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
 
 ::-webkit-scrollbar {
