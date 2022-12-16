@@ -159,8 +159,8 @@ a {
 /* ---------------------------------------- CATALOGO ---------------------------------------- */
 
 .four-column {
-    float: left;
-    width: 23%;
+    display: inline-block;
+    width: 22%;
     padding: 2.5% 0% 1% 2%;
 }
 

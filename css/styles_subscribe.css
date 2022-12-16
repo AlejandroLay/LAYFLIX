@@ -14,29 +14,38 @@ a {
     color: white;
 }
 
-.navMenu_logo li {
-    font-size: 17px;
-    list-style: none;
-    margin-left: 50px;
+
+/* ---------------------------------------- VIDEO DE FONDO ---------------------------------------- */
+
+
+/* video background */
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-.desc-film {
-    margin-top: 14%;
-    margin-left: 1%;
-    margin-right: 44%;
+main {
+    background-color: black;
+    font-size: 2rem;
+    position: relative;
 }
 
-
-/* .desc-film h3 {
-    font-size: 60px;
-} */
-
-.desc-film p {
-    font-size: 20px;
-}
-
-.contenido {
-    padding: 2.5% 2.5% 10% 2.5%;
+@media (max-width: 750px) {
+    #background-video {
+        display: none;
+    }
+    body {
+        background: url("../img/subscribe/black.jpg") no-repeat;
+        background-size: cover;
+    }
 }
 
 
@@ -90,24 +99,20 @@ a {
 
 /* ---------------------------------------- NAVBAR ---------------------------------------- */
 
+.navMenu_logo li {
+    font-size: 17px;
+    list-style: none;
+    margin-left: 50px;
+}
 
-/* #show_bg_2 {
-    width: 100%;
-    height: 925px;
-    background-size: cover;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-} */
+.desc-film {
+    margin-top: 14%;
+    margin-left: 1%;
+    margin-right: 44%;
+}
 
-#myVideo {
-    position: absolute;
-    z-index: -9999;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+.desc-film p {
+    font-size: 20px;
 }
 
 .btn-login {
@@ -146,4 +151,42 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+
+/* ---------------------------------------- CONTENIDO DENTRO DE LA PAGINA ---------------------------------------- */
+
+.contenido {
+    padding: 2.5% 2.5% 10% 2.5%;
+}
+
+
+/* ---------------------------------------- CATALOGO ---------------------------------------- */
+
+.four-column {
+    display: inline-block;
+    width: 22%;
+    padding: 2.5% 0% 1% 2%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .four-column {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .four-column {
+        width: 47%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .four-column {
+        width: 100%;
+    }
 }
