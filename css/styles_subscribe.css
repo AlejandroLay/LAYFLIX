@@ -38,7 +38,7 @@ main {
     position: relative;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     #background-video {
         display: none;
     }
@@ -51,54 +51,6 @@ main {
         text-align: center;
         vertical-align: middle;
     }
-}
-
-
-/* ---------------------------------------- SEARCH BOX ---------------------------------------- */
-
-.search__container {
-    margin-top: 10%;
-}
-
-.search__title {
-    font-size: 22px;
-    font-weight: 900;
-    text-align: center;
-    color: #ff8b88;
-}
-
-.search__input {
-    width: 30%;
-    padding: 12px 24px;
-    background-color: transparent;
-    transition: transform 250ms ease-in-out;
-    font-size: 14px;
-    line-height: 18px;
-    color: white;
-    background-color: transparent;
-    border-radius: 50px;
-    border: 1px solid white;
-    transition: all 250ms ease-in-out;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-}
-
-.search__input::placeholder {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-
-/* EFECTO ANIMACIÓN */
-
-.search__input:focus {
-    padding: 12px 0;
-    outline: 0;
-    border: 1px solid transparent;
-    border-bottom: 1px solid white;
-    border-radius: 0;
-    background-position: 100% center;
 }
 
 
@@ -140,8 +92,8 @@ main {
 
 .navMenu_navbar .navMenu_logo {
     float: left;
-    width: 40%;
     height: 100%;
+    width: 40%;
     display: flex;
     align-items: center;
     font-size: 24px;
@@ -230,9 +182,6 @@ main {
 .netflix-row--item:last-child {
     transform-origin: center right;
 }
-
-
-/* HOVER EFFECT */
 
 .netflix-row {
     opacity: 1;
