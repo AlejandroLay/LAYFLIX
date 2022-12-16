@@ -157,7 +157,11 @@ main {
 /* ---------------------------------------- CONTENIDO DENTRO DE LA PAGINA ---------------------------------------- */
 
 .contenido {
-    padding: 2.5% 2.5% 10% 2.5%;
+    padding: 1.5% 2.5% 10% 2.5%;
+}
+
+.contenido h4 {
+    font-size: 32.5px;
 }
 
 
@@ -189,4 +193,59 @@ main {
     .four-column {
         width: 100%;
     }
+}
+
+
+/* ---------------------------------------- TOP LIST ---------------------------------------- */
+
+.netflix-row {
+    overflow: scroll;
+    width: 100%;
+}
+
+.netflix-row--inner {
+    transition: 450ms transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 70.3125px 0;
+    padding-bottom: 10px;
+}
+
+.netflix-row--item {
+    display: inline-block;
+    background: #808080;
+    width: 300px;
+    height: 140.625px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+.netflix-row--item:last-child {
+    transform-origin: center right;
+}
+
+
+/* HOVER EFFECT */
+
+.netflix-row {
+    opacity: 1;
+}
+
+.netflix-row--inner:hover {
+    transform: translate3d(-62.5px, 0, 0);
+}
+
+.netflix-row--inner:hover .netflix-row--item {
+    opacity: 0.3;
+}
+
+.netflix-row--inner:hover .netflix-row--item:hover {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.netflix-row--item:hover~.netflix-row--item {
+    transform: translate3d(125px, 0, 0);
 }
