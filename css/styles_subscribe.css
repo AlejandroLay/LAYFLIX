@@ -46,6 +46,11 @@ main {
         background: url("../img/subscribe/black.jpg") no-repeat;
         background-size: cover;
     }
+    .desc-film {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
 }
 
 
