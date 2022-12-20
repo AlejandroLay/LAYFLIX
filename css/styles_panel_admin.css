@@ -1,0 +1,89 @@
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ---------------------------------------- NAVBAR ---------------------------------------- */
+
+.navMenu_logo li {
+    font-size: 17px;
+    list-style: none;
+    margin-left: 50px;
+}
+
+.desc-film {
+    margin-top: 14%;
+    margin-left: 1%;
+    margin-right: 44%;
+}
+
+.desc-film p {
+    font-size: 20px;
+}
+
+.btn-login {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: 7px solid red;
+    border-radius: 7px;
+}
+
+.navMenu_navbar {
+    position: relative;
+    z-index: 15;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 1%;
+    height: 100px;
+}
+
+.navMenu_navbar .navMenu_logo {
+    float: left;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.navMenu_navbar .navMenu_links {
+    float: right;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* GREY BOX */
+
+.container {
+    padding: 4%;
+}
+
+table {
+    width: 100%;
+}
+
+.grey-box {
+    background-color: rgb(36, 36, 36);
+    border-radius: 20px;
+    padding: 2%;
+    color: white;
+}
