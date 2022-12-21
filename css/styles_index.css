@@ -164,6 +164,11 @@ a {
     padding: 2.5% 0% 1% 2%;
 }
 
+.four-column p {
+    font-size: 12.5px;
+    text-align: center;
+}
+
 .four-column img {
     width: 100%;
 }
@@ -185,6 +190,3 @@ a {
         width: 100%;
     }
 }
-
-
-/* FOOTER */

@@ -216,6 +216,11 @@ main {
     font-size: 30px;
 }
 
+.container p {
+    font-size: 12.5px;
+    text-align: center;
+}
+
 .image {
     opacity: 1;
     display: block;
